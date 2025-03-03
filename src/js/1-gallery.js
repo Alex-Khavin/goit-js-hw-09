@@ -78,7 +78,6 @@ function markupImg(cards) {
     class="gallery-image"
     src="${card.preview}"
     alt="${card.description}"
-    title="${card.description}"
     />
     </a>
     </li>`;
@@ -88,7 +87,7 @@ function markupImg(cards) {
 
 galleryList.insertAdjacentHTML("beforeend", markupImg(images));
 
-let gallery = new SimpleLightbox('.gallery a', {capton: true, captionDelay: 250});
+let gallery = new SimpleLightbox('.gallery a', {captionsData: "alt", captionDelay: 250});
 
 
   
