@@ -87,7 +87,9 @@ function markupImg(cards) {
 
 galleryList.insertAdjacentHTML("beforeend", markupImg(images));
 
-let gallery = new SimpleLightbox('.gallery a', {captionsData: "alt", captionDelay: 250});
+let gallery = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 });
+
+//Видалив атрибут title
 
 
   
